@@ -1,0 +1,41 @@
+[
+  {
+    "category": "papeleria",
+    "code": "10001",
+    "description": "Libreta celeste de gatito",
+    "price": 2000,
+    "status": true,
+    "stock": 30,
+    "thumbnails": [
+      "https://kawaiihouse.cl/wp-content/uploads/2022/12/Libreta-celeste-gatito-con-flores-15x21cm-kawaii-495x500.jpg"
+    ],
+    "title": "Libreta gatito",
+    "id": 1
+  },
+  {
+    "category": "papeleria",
+    "code": "10002",
+    "description": "Libreta rosada de gatito",
+    "price": 2000,
+    "stock": 20,
+    "thumbnails": [
+      "https://kawaiihouse.cl/wp-content/uploads/2022/12/Libreta-rosada-gatitos-con-patitas-15x21-cm-kawaii-495x500.jpg"
+    ],
+    "title": "Libreta gatitos",
+    "status": true,
+    "id": 2
+  },
+  {
+    "category": "papeleria",
+    "code": "10003",
+    "description": "Libreta celeste de pizza purrty",
+    "price": 1900,
+    "status": true,
+    "stock": 15,
+    "thumbnails": [
+      "https://www.kawaiibarcelona.com/wp-content/uploads/2021/06/CUADERNO-TAPA-FORRADA-A5-BULLET-PUSHEEN-FOODIE-COLLECTION-350x435.jpg"
+    ],
+    "title": "Libreta",
+    "id": 3
+  }
+]

@@ -1,0 +1,81 @@
+<div>
+    <div class="boxTitle">
+        <h1>Productos</h1>
+        <div class="positionBtn">
+            <button class="btnChat" id="goCarts">Ver Carritos</button>
+        </div>
+    </div>
+
+    <div class="containerFilters">
+    <div>
+        <h3>Límite de productos:</h3>
+        <input id="limit" class="inputCls" type="text" value="{{dataProducts.limit}}" >
+        <button class="btnChat" id="btnLimit">Enviar</button>
+        <button class="btnChat" id="clearLimit">Limpiar</button>
+    </div>
+    <div>        
+        <h3>Buscar por nombre:</h3>
+        <input type="text" id="searchQuery" class="inputCls" value="{{dataProducts.query}}">
+        <button class="btnChat" id="btnSearchQuery">Buscar</button>
+        <button class="btnChat" id="clearQuery">Limpiar</button>
+    </div>
+    <div> 
+        <h3>Categorias:</h3>  
+        <select name="category" id="categorySearch" class="custom-select">
+            <option value="" disabled selected>Seleccione</option>
+            <option value="libreria">Librería</option>
+            <option value="papeleria">Papelería</option>
+        </select> 
+    </div>
+    <div> 
+        <h3>Ordenar por:</h3>  
+        <select name="price" id="priceOrder" class="custom-select">
+            <option value="" disabled selected>Seleccione</option>
+            <option value="asc">precio ascendiente</option>
+            <option value="desc">precio descendiente</option>
+        </select> 
+    </div>
+    </div>
+
+    <div>
+        <p>Página: {{dataProducts.page}} / {{dataProducts.totalPages}}</p>
+    </div>
+
+    <div class="bodyPage">
+        {{#each dataProducts.payload}}
+        <div class="boxProduct">
+            <img src={{this.thumbnails.[0]}} alt="products" class="image">
+
+            <div class="boxInfo">
+                <h2>{{this.title}}</h2>
+                <p>{{this.description}}</p>
+                <p>Precio: ${{this.price}}</p>
+                <button class="btnChat" id="plusBtn"  data-id="{{this._id}}">Ver más</button>
+            </div>
+        </div>
+    {{/each}}
+    </div>
+
+    <div class="pagination">
+        <button class="btnChat" {{#unless dataProducts.hasPrevPage }}style="display: none;"{{/unless}}>
+            <a id="btnPrev" href="#" class="btnPagination">
+                Anterior
+            </a>
+        </button>
+
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <p>Producto {{dataProducts.limit}} de  {{dataProducts.totalDocs}}</p> 
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+        <button class="btnChat" {{#unless dataProducts.hasNextPage }}style="display: none;"{{/unless}}>
+        <a id="btnNext" href="#" class="btnPagination">
+            Siguiente
+        </a>
+        </button>
+    </div>
+
+    <input id="prevPage" type="hidden" value="{{dataProducts.prevPage}}" >
+    <input id="nextPage" type="hidden" value="{{dataProducts.nextPage}}" >
+    <input id="page" type="hidden" value="{{dataProducts.page}}" >
+</div>
+<script src="/js/products/index.js"></script>

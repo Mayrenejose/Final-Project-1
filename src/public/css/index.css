@@ -1,0 +1,222 @@
+body {
+    background-color: #f8f9f9;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+p {
+    font-size: 25px;
+    text-align: center;
+    margin: 0;
+}
+
+h2 {
+    text-align: center;
+    margin: 0;
+}
+
+.boxTitle {
+    background-color: #ff7876;
+    display: flex;
+    justify-content: center;
+}
+
+.image {
+    width: 31.25rem;
+    max-height: 31.25rem;
+}
+
+.boxProduct {
+    width: 31.25rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.bodyPage {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 64px;
+    padding: 32px;
+}
+
+.boxInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 6px;
+    background-color: #e1e6e3;
+}
+
+.boxInfo button {
+    background-color: #ff7876;
+}
+
+.positionBtn {
+    padding: 24px;
+}
+
+.btnChat {
+    width: 180px;
+    height: 50px;
+    color: black;
+    padding: 5px 10px;
+    font-size: large;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    outline: none;
+    border-radius: 20px;
+    border: 2px solid #e1e6e3;
+    background: #e1e6e3;
+}
+
+.btnChat:hover {
+    background: #fff;
+    color: black;
+}
+
+.inputCls {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 25px;
+}
+
+.inputCls:focus {
+    outline: none;
+    border-color: #2980b9;
+    box-shadow: 0 0 5px rgba(41, 128, 185, 0.5);
+}
+
+.labelCls {
+    display: flex;
+    justify-content: end;
+}
+
+.mainChat {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    margin: 560px 0 0;
+    width: 100%;
+}
+
+.textareaCls {
+    width: 69%;
+    height: 40px;
+    padding: 8px;
+    resize: vertical;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.textareaCls:focus {
+    outline: none;
+    border-color: #2980b9; 
+    box-shadow: 0 0 5px rgba(41, 128, 185, 0.5);
+}
+
+.boxMessages {
+    width: 50%;
+    max-width: 63 rem;
+    margin: 0 auto; 
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 45px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    min-height: 500px;
+}
+
+.inputEmail {
+    display: flex;
+    justify-content: center;
+}
+
+.containerText {
+    display: flex;
+    flex-direction: column;
+}
+
+.containerText p {    
+    text-align: start;
+}
+
+.imgProduct {
+    width: 43.75rem;
+    height: auto;
+}
+
+.boxDescriptionProduct {
+    display: flex;
+    padding: 64px;
+    justify-content: center;
+}
+
+.boxInformationProduct {
+    padding: 64px;
+}
+
+.btnPagination {
+    font-size: 23px;
+    text-decoration: none;
+    color: black;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    padding: 72px;
+}
+
+.containerFilters {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 64px;
+}
+
+.custom-select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding: 8px 12px;
+    font-size: 16px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    background-color: #fff;
+}
+
+.custom-select:hover {
+    border-color: #aaa; 
+}
+
+.custom-select:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+.custom-select::after {
+    content: '\25BC'; 
+    position: absolute;
+    top: 50%;
+    right: 10px; 
+    transform: translateY(-50%);
+    pointer-events: none; 
+    color: #555; 
+}  
+
+.custom-select option:checked {
+    background-color: #f0f0f0;
+}
